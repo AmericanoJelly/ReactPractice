@@ -1,0 +1,7 @@
+node.js 최신버전설치
+yarn 설치
+vsCode 설치
+VSCode에서 폴더 위치에서 터미널 열어준다음
+npx create-react-app test (리액트 test 프로젝트 생성)
+test 폴더로 다시 들어간 다음 
+npm start 하면 새로운 프로젝트 화면 열림
