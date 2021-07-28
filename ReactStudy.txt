@@ -1,3 +1,9 @@
+리엑트 환경 만들기
+새로운 파일을 만들어준다
+터미널 창을 열고 npx create-react-app blog
+만들어진 파일로 다시 오픈
+npm start
+
 컴포넌트를 만드는 두가지 방법
 1. 클래스를 통해 만드는 방법(꼭 render함수가 있어야 하고, 내부에서는 JSX를 return해주어야 한다.)
 2. 함수를 통하여 컴포넌트를 만드는 방법
@@ -10,3 +16,66 @@ let -  바뀌게 될 수 있는 값
 (className 이라고 써야 css파일의 class명을 넣을 수 있다.)
 
 데이터 바인딩 - 자바스크립트 데이터를 HTML에 꽃아 넣는 작업
+
+import React, { useState } from 'react';
+useState() 함수는 state를 하나 만들어 주는 함수이다.
+let [a,b] = useState('저장할 데이터') 
+a라는 변수엔 실제 저장할 데이터가 들어 있고 
+b라는 변수엔 저장할 데이터를 변경 시킬 함수가 들어있다.
+
+destructuring 문법
+array안에 있는 데이터들을 변수로 쉽게 저장하고 싶을 때 쓰는 신문법
+옛날 자바스크립트
+var array = ['Kim', 20];
+var name = array[0];
+var age = array[1];
+요즘 자바스크립트
+var [name, age] = ['Kim', 20]
+
+
+state의 가장 큰 장범은 state가 변경될 때마다 자동으로 state와 관련된 HTML이 재렌더링 된다는 것
+state는 상품명, 글제목 가격 이런 자주 변하는 데이터들을 저장
+
+터미널 / 브라우저 콘솔창에 warning이 뜨는 이유
+eslint가 잘못된 코딩관습 교정
+이걸 안보고 싶으면 최상단에 /*eslint-disable*/ 추가
+
+자바스크립트 내에서 array나 object 자료형은 = 등호로 복사하시면 각각 별개의 자료형이 생성되는게 아니라 값을 공유
+
+var data1 = [1,2,3];
+var data2 = [...data1] ...은 중괄호나 대괄호를 벗기는 연산자
+
+
+Component의 특징
+
+1. Component 이름지으실 땐 영어대문자로 보통 시작합니다.
+
+2. return () 안엔 태그들이 평행하게 여러개 들어갈 수 없습니다.
+
+평행하게 여러개의 태그를 쓰고 싶으면 <div>로 묶으셔야합니다.
+
+아니면 의미없는 div를 쓰기 싫으시면 <> </> 이걸로 묶으셔도 됩니다.
+function 예시컴포넌트(){
+  return (
+    <>
+      <div>안녕</div>
+      <div>안녕</div>
+      <div>안녕</div>
+    </>
+  )
+}
+▲ fragments라는 문법입니다. 의미없는 <div>쓰기 싫을 때 사용가능합니다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
