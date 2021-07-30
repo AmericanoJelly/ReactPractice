@@ -6,3 +6,7 @@ Node.js 버전관리
 4. nvm-setup.zip 파일 저장 후 실행
 5. nvm version //nvm 버전확인
 6. nvm install 10.15.0 //원하는 버전 설치
+7. nvm list 명령어로 확인
+8. nvm use 10.15.0 //사용할 버전 선택
+
+
