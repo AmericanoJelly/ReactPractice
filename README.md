@@ -1,4 +1,4 @@
- #React practice
+ # React practice
  
 <h3>Node.js 버전관리</h3>
 <ul>
@@ -31,37 +31,37 @@
 <li>const - 한번 선언하고 바뀌지 않는 값을 설정할 때 사용</li>
 <li>let -  바뀌게 될 수 있는 값</li>
 </ul>
-  
-<p>리엑트에서 class=""를 넣고 싶으면 className=""이라고 사용해야함
-(className 이라고 써야 css파일의 class명을 넣을 수 있다.)</p>
+ 
+ <h3>className</h3>
+<p>리엑트에서 class=""를 넣고 싶으면 className=""이라고 사용해야함</p>
+(className 이라고 써야 css파일의 class명을 넣을 수 있다.)
 
 <p>데이터 바인딩 - 자바스크립트 데이터를 HTML에 꽃아 넣는 작업</p>
 
+<hr>
 import React, { useState } from 'react';
-
 useState() 함수는 state를 하나 만들어 주는 함수이다.
-
 let [a,b] = useState('저장할 데이터') 
-
 a라는 변수엔 실제 저장할 데이터가 들어 있고 
-
 b라는 변수엔 저장할 데이터를 변경 시킬 함수가 들어있다.
 
 
-destructuring 문법
+<h3>destructuring 문법</h3>
 array안에 있는 데이터들을 변수로 쉽게 저장하고 싶을 때 쓰는 신문법
-옛날 자바스크립트
+
+- 옛날 자바스크립트
 var array = ['Kim', 20];
 var name = array[0];
 var age = array[1];
-요즘 자바스크립트
+
+-요즘 자바스크립트
 var [name, age] = ['Kim', 20]
 
-
+<hr>
 state의 가장 큰 장범은 state가 변경될 때마다 자동으로 state와 관련된 HTML이 재렌더링 된다는 것
 state는 상품명, 글제목 가격 이런 자주 변하는 데이터들을 저장
 
-터미널 / 브라우저 콘솔창에 warning이 뜨는 이유
+<h3>터미널 / 브라우저 콘솔창에 warning이 뜨는 이유</h3>
 eslint가 잘못된 코딩관습 교정
 이걸 안보고 싶으면 최상단에 /*eslint-disable*/ 추가
 
