@@ -79,7 +79,7 @@ var data2 = [...data1] ...은 중괄호나 대괄호를 벗기는 연산자<br>
 <hr>
 평행하게 여러개의 태그를 쓰고 싶으면<div>로 묶으셔야합니다.<br>
 아니면 의미없는 div를 쓰기 싫으시면 <> </> 이걸로 묶으셔도 됩니다.<br>
-function 예시컴포넌트(){
+"function 예시컴포넌트(){
   return (
     <>
       <div>안녕</div>
@@ -87,7 +87,7 @@ function 예시컴포넌트(){
       <div>안녕</div>
     </>
   )
-}
+}"
 ▲ fragments라는 문법입니다. 의미없는 <div>쓰기 싫을 때 사용가능합니다.<br>
 
 <h3>삼항연산자</h3>
@@ -99,7 +99,7 @@ function 예시컴포넌트(){
 JSX {}중괄호 안에서 쓸 수 있는 map이라는 반복문 이용
 array에 붙일 수 있는 일종의 내장함수
 
-var 어레이 = [2,3,4];
+"var 어레이 = [2,3,4];
 어레이.map(function(a){
   return a * 10
 });
@@ -107,28 +107,27 @@ var 어레이 = [2,3,4];
 var 어레이 = [2,3,4];
 var newArray = 어레이.map(function(a){
   return a * 10
-});
+});"
 위처럼 작성하면 newArray에는 [20,30,40]이 담겨져있다
 
 원래 어레이에는 [2,3,4]
 
 일반 for 반복문을 쓰고싶다면
 
- 
 
 그냥 따로 함수를 만들어서 쓰셔야합니다.
 
-1. 따로 일반 함수를 만들고 
+1. 따로 일반 함수를 만들고 <br>
 
-2. 함수안에 HTML을 담을 array 자료를 하나 생성합니다. 
+2. 함수안에 HTML을 담을 array 자료를 하나 생성합니다. <br>
 
-3. 함수안에서 for 반복문을 이용해 array내에 HTML을 추가해줍니다.
+3. 함수안에서 for 반복문을 이용해 array내에 HTML을 추가해줍니다.<br>
 
-4. 완성된 array를 return 해줍니다. 
+4. 완성된 array를 return 해줍니다. <br>
 
-5. 그리고 함수를 원하는 곳에 { 함수명() } 데이터바인딩 해주시면 됩니다. 
+5. 그리고 함수를 원하는 곳에 { 함수명() } 데이터바인딩 해주시면 됩니다. <br>
 
-function App (){
+"function App (){
 
   function 반복된UI(){
     var 어레이 = [];
@@ -144,7 +143,7 @@ function App (){
       { 반복된UI() }
     </div>
   )
-}
+}"
 
-
+<h3>Ajax</h3>
 Ajax(Asynchronous JavaScript and XML, 에이잭스)는 비동기적인 웹 애플리케이션의 제작을 위해 아래와 같은 조합을 이용하는 웹 개발 기법이다.
