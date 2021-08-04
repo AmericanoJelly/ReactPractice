@@ -1,4 +1,4 @@
- # React practice
+ # React 이것저것 노트
  
 <h3>Node.js 버전관리</h3>
 <ul>
