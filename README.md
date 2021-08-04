@@ -1,5 +1,6 @@
-  
-# Node.js 버전관리
+ #React practice
+ 
+<h3>Node.js 버전관리</h3>
 <ul>
 <li>제어판에서 기존의 Node.js 모두 삭제</li>
 <li>C:\Users\<사용자이름>\AppData\Roaming\npm 폴더 지우기</li>
@@ -9,7 +10,7 @@
 <li>nvm install 10.15.0 //원하는 버전 설치</li></li>
 <li>nvm list 명령어로 확인</li>
 <li>nvm use 10.15.0 //사용할 버전 선택</li>
-<ul>
+</ul>
 
  <h3> 리엑트 new환경 만들기 </h3>
 <ul>   
@@ -26,19 +27,26 @@
 </ul>
   
 <h3>JSX안에 자바스트립트 값 사용하기</h3>
-const - 한번 선언하고 바뀌지 않는 값을 설정할 때 사용
-let -  바뀌게 될 수 있는 값
+<ul>
+<li>const - 한번 선언하고 바뀌지 않는 값을 설정할 때 사용</li>
+<li>let -  바뀌게 될 수 있는 값</li>
+</ul>
+  
+<p>리엑트에서 class=""를 넣고 싶으면 className=""이라고 사용해야함
+(className 이라고 써야 css파일의 class명을 넣을 수 있다.)</p>
 
-리엑트에서 class=""를 넣고 싶으면 className=""이라고 사용해야함
-(className 이라고 써야 css파일의 class명을 넣을 수 있다.)
-
-데이터 바인딩 - 자바스크립트 데이터를 HTML에 꽃아 넣는 작업
+<p>데이터 바인딩 - 자바스크립트 데이터를 HTML에 꽃아 넣는 작업</p>
 
 import React, { useState } from 'react';
+
 useState() 함수는 state를 하나 만들어 주는 함수이다.
+
 let [a,b] = useState('저장할 데이터') 
+
 a라는 변수엔 실제 저장할 데이터가 들어 있고 
+
 b라는 변수엔 저장할 데이터를 변경 시킬 함수가 들어있다.
+
 
 destructuring 문법
 array안에 있는 데이터들을 변수로 쉽게 저장하고 싶을 때 쓰는 신문법
