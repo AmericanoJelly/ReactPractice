@@ -39,47 +39,46 @@
 <p>데이터 바인딩 - 자바스크립트 데이터를 HTML에 꽃아 넣는 작업</p>
 
 <hr>
-import React, { useState } from 'react';
-useState() 함수는 state를 하나 만들어 주는 함수이다.
-let [a,b] = useState('저장할 데이터') 
-a라는 변수엔 실제 저장할 데이터가 들어 있고 
-b라는 변수엔 저장할 데이터를 변경 시킬 함수가 들어있다.
+import React, { useState } from 'react';<br>
+useState() 함수는 state를 하나 만들어 주는 함수이다.<br>
+let [a,b] = useState('저장할 데이터') <br>
+a라는 변수엔 실제 저장할 데이터가 들어 있고 <br>
+b라는 변수엔 저장할 데이터를 변경 시킬 함수가 들어있다.<br>
 
 
 <h3>destructuring 문법</h3>
-array안에 있는 데이터들을 변수로 쉽게 저장하고 싶을 때 쓰는 신문법
+array안에 있는 데이터들을 변수로 쉽게 저장하고 싶을 때 쓰는 신문법<br>
 
-- 옛날 자바스크립트
-var array = ['Kim', 20];
-var name = array[0];
-var age = array[1];
+- 옛날 자바스크립트<br>
+var array = ['Kim', 20];<br>
+var name = array[0];<br>
+var age = array[1];<br>
 
--요즘 자바스크립트
-var [name, age] = ['Kim', 20]
+- 요즘 자바스크립트<br>
+var [name, age] = ['Kim', 20]<br>
 
 <hr>
-state의 가장 큰 장범은 state가 변경될 때마다 자동으로 state와 관련된 HTML이 재렌더링 된다는 것
+state의 가장 큰 장범은 state가 변경될 때마다 자동으로 state와 관련된 HTML이 재렌더링 된다는 것<br>
 state는 상품명, 글제목 가격 이런 자주 변하는 데이터들을 저장
 
 <h3>터미널 / 브라우저 콘솔창에 warning이 뜨는 이유</h3>
-eslint가 잘못된 코딩관습 교정
+eslint가 잘못된 코딩관습 교정<br>
 이걸 안보고 싶으면 최상단에 /*eslint-disable*/ 추가
 
-자바스크립트 내에서 array나 object 자료형은 = 등호로 복사하시면 각각 별개의 자료형이 생성되는게 아니라 값을 공유
+<p>자바스크립트 내에서 array나 object 자료형은 = 등호로 복사하시면 각각 별개의 자료형이 생성되는게 아니라 값을 공유</p>
 
-var data1 = [1,2,3];
-var data2 = [...data1] ...은 중괄호나 대괄호를 벗기는 연산자
+var data1 = [1,2,3];<br>
+var data2 = [...data1] ...은 중괄호나 대괄호를 벗기는 연산자<br>
 
 
-Component의 특징
+<h3>Component의 특징</h3>
 
-1. Component 이름지으실 땐 영어대문자로 보통 시작합니다.
+1. Component 이름지으실 땐 영어대문자로 보통 시작합니다.<br>
+2. return () 안엔 태그들이 평행하게 여러개 들어갈 수 없습니다.<br>
 
-2. return () 안엔 태그들이 평행하게 여러개 들어갈 수 없습니다.
-
-평행하게 여러개의 태그를 쓰고 싶으면 <div>로 묶으셔야합니다.
-
-아니면 의미없는 div를 쓰기 싫으시면 <> </> 이걸로 묶으셔도 됩니다.
+<hr>
+평행하게 여러개의 태그를 쓰고 싶으면<div>로 묶으셔야합니다.<br>
+아니면 의미없는 div를 쓰기 싫으시면 <> </> 이걸로 묶으셔도 됩니다.<br>
 function 예시컴포넌트(){
   return (
     <>
@@ -89,13 +88,14 @@ function 예시컴포넌트(){
     </>
   )
 }
-▲ fragments라는 문법입니다. 의미없는 <div>쓰기 싫을 때 사용가능합니다.
+▲ fragments라는 문법입니다. 의미없는 <div>쓰기 싫을 때 사용가능합니다.<br>
 
-삼항연산자는 if문이랑 똑같은 용도로 사용하실 수 있는 쌩자바스크립트 문법
-조건식 ? 조건식 참일 때 실행할 코드 : 조건식 거짓일 때 실행할 코드
-리액트에서 텅빈 HTML을 의미하는 코드는 null이라는 자료형
+<h3>삼항연산자</h3>
+삼항연산자는 if문이랑 똑같은 용도로 사용하실 수 있는 쌩자바스크립트 문법<br>
+조건식 ? 조건식 참일 때 실행할 코드 : 조건식 거짓일 때 실행할 코드<br>
+리액트에서 텅빈 HTML을 의미하는 코드는 null이라는 자료형<br>
 
-자바스크립트 map함수 쓰는 법
+<h3>자바스크립트 map함수 쓰는 법</h3>
 JSX {}중괄호 안에서 쓸 수 있는 map이라는 반복문 이용
 array에 붙일 수 있는 일종의 내장함수
 
