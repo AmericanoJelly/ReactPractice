@@ -147,3 +147,5 @@ var newArray = 어레이.map(function(a){
 
 <h3>Ajax</h3>
 Ajax(Asynchronous JavaScript and XML, 에이잭스)는 비동기적인 웹 애플리케이션의 제작을 위해 아래와 같은 조합을 이용하는 웹 개발 기법이다.
+
+
