@@ -148,4 +148,23 @@ var newArray = 어레이.map(function(a){
 <h3>Ajax</h3>
 Ajax(Asynchronous JavaScript and XML, 에이잭스)는 비동기적인 웹 애플리케이션의 제작을 위해 아래와 같은 조합을 이용하는 웹 개발 기법이다.
 
+### lter로 홀수만 구한 후 map으로 2배씩 곱해주고 newarr에 push해 배열로 출력하기
+
+ let newarr = [];
+ let arr = ['1','2','3','4','5']
+ 
+ 
+ console.log("---arr---");
+ console.log(arr);
+
+
+ let arr2 = arr.filter(num => num % 2 !== 0)
+ .map((num, i) =>{
+   newarr.push(num*2);
+   }
+
+ );
+  
+ console.log(newarr);
+ 
 
